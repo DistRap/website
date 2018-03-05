@@ -8,7 +8,7 @@
     %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}
     %link{:href => "css/bootstrap-responsive.min.css", :rel => "stylesheet"}
     %link{:href => "css/font-awesome.css", :rel => "stylesheet"}
-    %link{:href => "favfa.ico", :rel => "shortcut fa", :type => "image/x-fa"}
+    %link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
     %script{:src => "js/jquery-1.7.1.min.js"}
     %script{:src => "js/bootstrap.min.js"}
     %script{:src => "js/OpenLayers.js"}
@@ -16,18 +16,12 @@
   %body
     .container
       .row-fluid
-        .span12
-          %pre
-            :preserve
-               ____  _     _   ____
-              |  _ \(_)___| |_|  _ \ __ _ _ __
-              | | | | / __| __| |_) / _` | '_ \
-              | |_| | \__ \ |_|  _ < (_| | |_) |
-              |____/|_|___/\__|_| \_\__,_| .__/
-                                         |_|
+        .span6
+          <img alt="DistRap logo" src='img/logo.svg'>
+        .span6
+
       .row-fluid
-        .span4
-          %h3 Distributed Rapid Prototyping
+        .span6
           %p
             Welcome to the world of distributed control!
 
@@ -35,24 +29,22 @@
             provide robust solution for implementing various control systems
             in distributed manner.
 
-        .span4
           %h3 Why distributed?
           %p
             Currently available systems often hit limitations of controller boards
             either in scalability, firmware capacity or complexity needed for further
             extension.
-            Inspired by Unix philosophy,  DistRap nodes should do one thing and do it well
+            Inspired by Unix philosophy, DistRap nodes should do one thing and do it well
             and communicate with each other over shared bus.
             Such system should provide extensible and robust solution for hobby or industrial
             automation allowing control of wide range of machines.
 
-        .span4
           %h3 Future is closed loop
           %p
             DistRap servo controllers offer closed-loop servo functionality with feedback back to
             master node. This can greatly improve safety and reliability of your machine or whole
             control system.
-      .row-fluid
+
         .span6
           %h3 Resources
           %table#resources
@@ -80,7 +72,6 @@
                 github
               %td
                 %a{:href=>"https://github.com/distrap/"} github.com/distrap
-        .span6
 
       %hr
       .row
