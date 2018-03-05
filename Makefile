@@ -18,4 +18,4 @@ watch-build:
 	while true; do inotifywait -r -e close_write .; make; done
 
 deploy: build
-	scp -r css font js index.html root@distrap.org:/var/www/html/
+	scp -r css fonts js index.html img favicon.ico root@distrap.org:/var/www/html/
